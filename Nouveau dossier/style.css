@@ -1,0 +1,61 @@
+/*====================== mode responsive ======================*/
+/* mobile entre 320 et 600px soit 36em=600px*/
+/* tablette entre 600 et 1024px soit 63em=1024*/
+/* pc et autre au dela de 1024*/
+@media screen and (max-width: 63em) {
+  body {
+    width: 63em;
+    background: yellow;
+    width: auto;
+    text-align: center;
+  }
+
+  /*header*/
+  img {
+    width: auto;
+    height: 2em;
+  }
+
+  .choisissez, .composition, .Deguster {
+    background-color: pink;
+    width: auto;
+    height: 3em;
+    border-radius: 5em;
+    margin-bottom: 1em;
+  }
+
+  h6 {
+    text-align: left;
+  }
+
+  #conteneur {
+    background: #F2F2F2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  aside {
+    width: 15em;
+    height: 16em;
+    border: solid 1px red;
+    border-radius: 5px;
+  }
+
+  .img_resto {
+    position: relative;
+    width: 100%;
+    height: 10em;
+  }
+
+  .image-cover {
+    object-fit: cover;
+    object-position: 0 -2 em;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
