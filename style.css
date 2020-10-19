@@ -4,40 +4,54 @@
     width: auto;
     text-align: center;
     margin: 0em;
+    position: absolute;
+    z-index: 3;
   }
 
-  /*spin load*/
-  .load__page {
+  /*loading spinner*/
+  .font-loading {
     width: 100%;
-    height: 50em;
+    height: 4em;
     background: #a7a6a6;
-    animation: load 6000ms;
+    animation: font-loading 5000ms;
     position: absolute;
     z-index: 0;
     opacity: 0;
   }
 
+  .load .fas {
+    margin-top: 0.5em;
+    font-size: 2em;
+    transform: rotate(0deg);
+  }
+
+  .load .fas {
+    transform: rotate(-2160deg);
+    transition: transform 5000ms ease-in-out;
+  }
+
   .load {
-    width: 160px;
-    height: 160px;
-    margin-top: 50%;
-    margin-left: 31%;
-    animation: load 6000ms;
+    width: 9em;
+    height: 9em;
+    margin-top: 28%;
+    margin-left: 35%;
+    animation: load 5000ms;
     opacity: 0;
     position: absolute;
     z-index: 0;
   }
   .load__circle--0 {
-    width: 160px;
-    height: 160px;
-    background: #99E2D0;
+    width: 9em;
+    height: 9em;
+    background: #9356DC;
+    opacity: 0.5;
     border-radius: 50%;
     position: absolute;
     animation: circle 3000ms backwards;
   }
   .load__circle--1 {
-    width: 140px;
-    height: 140px;
+    width: 7.7em;
+    height: 7.7em;
     background: #a7a6a6;
     border-radius: 50%;
     position: absolute;
@@ -46,18 +60,19 @@
     animation: circle 3000ms backwards;
   }
   .load__circle--2 {
-    width: 120px;
-    height: 120px;
+    width: 6.5em;
+    height: 6.5em;
     border-radius: 50%;
-    background: #99E2D0;
+    background: #FF79DA;
+    opacity: 0.5;
     margin-top: 20px;
     margin-left: 20px;
     position: absolute;
     animation: circle 3000ms backwards;
   }
   .load__circle--3 {
-    width: 100px;
-    height: 100px;
+    width: 5.2em;
+    height: 5.2em;
     border-radius: 50%;
     margin-top: 0em;
     background: #a7a6a6;
@@ -67,29 +82,15 @@
     animation: circle 3000ms backwards;
   }
   .load__circle--4 {
-    width: 80px;
-    height: 80px;
+    width: 4em;
+    height: 4em;
     background: #99E2D0;
+    opacity: 0.5;
     border-radius: 50%;
     margin-top: 40px;
     margin-left: 40px;
     position: absolute;
     animation: circle 3000ms backwards;
-  }
-  .load--1 {
-    animation-delay: 600ms;
-  }
-  .load--2 {
-    animation-delay: 1200ms;
-  }
-  .load--3 {
-    animation-delay: 1800ms;
-  }
-  .load--4 {
-    animation-delay: 2400ms;
-  }
-  .load--5 {
-    animation-delay: 3000ms;
   }
 
   .load__circle--0 {
@@ -126,21 +127,40 @@
     0% {
       transform: scale(1);
       opacity: 0.9;
+      margin-top: 50%;
     }
     50% {
       transform: scale(1);
       opacity: 0.9;
+      margin-top: 50%;
     }
     80% {
       transform: scale(1);
       opacity: 0.9;
+      margin-top: 50%;
     }
     95% {
       transform: scale(1);
       opacity: 0.9;
+      margin-top: 50%;
     }
     100% {
       transform: scale(0);
+      opacity: 0;
+      margin-top: 50%;
+    }
+  }
+  @keyframes font-loading {
+    0% {
+      transform: scaleY(65);
+      opacity: 0.9;
+    }
+    98% {
+      transform: scaleY(65);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scaleY(0);
       opacity: 0;
     }
   }
@@ -202,7 +222,7 @@
     margin-top: 0.7em;
   }
 
-  input::placeholder {
+  input ::placeholder {
     color: black;
   }
 
@@ -267,9 +287,17 @@
     width: 19.2em;
     height: 4.5em;
     border-radius: 1em;
-    margin: 0em 0.2em 1em 0.5em;
-    margin-right: auto;
+    margin: 0em 0em 1em 0em;
     margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  .choisissez :hover, .composition :hover, .Deguster :hover {
+    background-color: #f5edff;
+    border-radius: 1em;
+  }
+  .choisissez :hover i, .composition :hover i, .Deguster :hover i {
+    color: green;
   }
 
   .first, .second, .third {
@@ -295,6 +323,7 @@
     width: 2em;
     height: 2em;
     float: left;
+    color: white;
     font-size: 1em;
     margin-top: 1em;
     margin-left: 0.5em;
@@ -303,7 +332,6 @@
   }
 
   .texte {
-    width: 80%;
     font-family: "Roboto Bold", arial;
     font-size: 1em;
     font-weight: 600;
@@ -402,6 +430,9 @@
   }
 
   .description h5 {
+    width: 80%;
+    background: yellow;
+    text-align: left;
     font-family: "roboto Bold", arial;
     font-weight: bolder;
     color: black;
@@ -421,11 +452,41 @@
     color: black;
   }
 
-  .description i {
+  .no-like {
+    margin-top: 1em;
+    margin-left: 80%;
+    width: 10%;
+    height: 3em;
+    position: absolute;
+    padding: 0;
+  }
+
+  .like {
+    width: 10%;
+    height: 3em;
+    opacity: 0.8;
+    padding: 0;
+  }
+
+  .description .far {
     float: right;
-    margin: 0.8em 1em 0em 0em;
+    margin: 0.1em 0.2em 0em 0em;
     font-size: 1.5em;
+    position: relative;
+    z-index: 1;
     color: black;
+  }
+  .description .far:focus {
+    display: none;
+  }
+
+  .description .fas {
+    float: right;
+    margin: 0.1em 0.2em 0em 0em;
+    font-size: 1.5em;
+    position: relative;
+    z-index: 0;
+    color: white;
   }
 
   .pied_resto {
@@ -469,6 +530,54 @@
   }
 
   /*============ menu==========*/
+  /* animation bouton menu*/
+  @keyframes btn_entrees {
+    0% {
+      transform-origin: 50% bottom;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: 50% bottom;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  @keyframes btn_plats {
+    0% {
+      transform-origin: 50% bottom;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    20% {
+      transform-origin: 50% bottom;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: 50% bottom;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  @keyframes btn_desserts {
+    0% {
+      transform-origin: 50% bottom;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    20% {
+      transform-origin: 50% bottom;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: 50% bottom;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  /* fin d'animation bouton*/
   .entete-menu {
     width: 100%;
     height: 2.8em;
@@ -521,13 +630,13 @@
     width: 100%;
     height: 16.5em;
     opacity: 1;
-    background: red;
+    background: green;
   }
 
   .liste_menu {
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 3;
     margin-top: 13.5em;
     background: #f6f6f6;
     border-top-left-radius: 2.5em;
@@ -563,32 +672,45 @@
     float: right;
   }
 
-  .btn {
-    background-color: white;
+  .btn_entrees, .btn_plats, .btn_desserts {
+    background: white;
     width: auto;
     height: 4em;
     border-radius: 1em;
     margin: 1em;
     box-shadow: 0em 0.4em 0.4em #e6e5e5;
+    animation: btn_entrees 3s;
+    opacity: 1;
   }
 
-  .X_btn {
+  .btn_plats, .X_btn_plats {
+    animation: btn_plats 6s;
+  }
+
+  .btn_desserts {
+    animation: btn_desserts 9s;
+  }
+
+  .X_btn_plats {
     background-color: white;
     width: auto;
     height: 5em;
     border-radius: 1em;
     margin: 1em;
     box-shadow: 0em 0.4em 0.4em #e6e5e5;
+    animation: btn_plats 6s;
   }
 
   .tarif {
     float: right;
     margin-top: 2em;
-    margin-right: 1.5em;
+    margin-right: 0.5em;
     font-weight: bold;
   }
 
   .X_tarif {
+    position: absolute;
+    z-index: 0;
     float: right;
     margin-top: 2em;
     margin-right: 1.5em;
@@ -602,6 +724,7 @@
     margin-top: 0.5em;
     margin-left: 0.5em;
     color: black;
+    text-overflow: ellipsis;
   }
 
   h3 {
@@ -609,21 +732,27 @@
     margin: 0em 0em 0.2em 0.5em;
     font-family: "Roboto";
     text-align: left;
+    text-overflow: ellipsis;
   }
 
   .intituler {
+    background: white;
     float: left;
-    width: 80%;
+    width: auto;
     height: auto;
     margin-top: 0.6em;
     margin-left: 0.2em;
+    position: absolute;
   }
 
   .prix {
-    background: #99E2D0;
+    background: white;
     float: right;
-    width: 3.5;
+    width: 4em;
     height: 4em;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
   }
@@ -633,16 +762,40 @@
     float: right;
     width: 3.5em;
     height: 5em;
+    position: relative;
+    z-index: 3;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
+    overflow: hidden;
+  }
+
+  .prix span {
+    transition: transform 400ms ease-in-out;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: 6em;
+    float: right;
+    z-index: 1;
+  }
+
+  .prix__valid {
+    background: #99E2D0;
+    width: 100%;
+    height: 4em;
+    position: absolute;
+    z-index: 0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    overflow: hidden;
   }
 
   .validation {
     background: white;
-    width: auto;
+    width: 5.7em;
+    float: right;
     height: 4em;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 0.3em;
+    position: relative;
+    z-index: 22;
   }
 
   .X_validation {
@@ -651,10 +804,6 @@
     height: 5em;
     border-top-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
-  }
-
-  :active .validation, .X_validation {
-    border-radius: 0em;
   }
 
   .commande {
@@ -709,21 +858,20 @@
   }
 
   /*  animation commande menu*/
-  .btn:active .validation, .X_btn:active .validation {
-    transform: translate(-55px, 0);
+  .btn_entrees:active .prix span, .btn_plats:active .prix span, .btn_desserts:active .prix span, .X_btn_plats:active .prix span {
+    transform: translate(-4em, 0) rotate(360deg);
   }
-  .btn:active .X_validation, .X_btn:active .X_validation {
-    transform: translate(-55px, 0);
+  .btn_entrees:active .validation, .btn_plats:active .validation, .btn_desserts:active .validation, .X_btn_plats:active .validation {
+    transform: translate(-3em, 0);
+  }
+  .btn_entrees:active .X_validation, .btn_plats:active .X_validation, .btn_desserts:active .X_validation, .X_btn_plats:active .X_validation {
+    transform: translate(-3em, 0);
   }
 
   .validation, .X_validation {
     transform-origin: 100%, 0;
-    transform: scaleX(1);
     transition: transform 400ms ease-in-out;
   }
-}
-:hover.far {
-  color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
