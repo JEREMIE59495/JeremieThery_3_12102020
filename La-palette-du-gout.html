@@ -4,10 +4,11 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>    
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>         <meta name="viewport" content="width=device-width">
-		<meta name="description" content="Site de planification de vacance pour permettre de trouver des hébergements et des activités dans la ville de leur choix. ">
-		<meta name="keywords" content="Hébergement, Acitvités, hébergement réputés"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/typeface-shrikhand@1.1.13/index.min.css " rel="stylesheet" />
+        <meta name="description" content="Site de planification de vacance pour permettre de trouver des hébergements et des activités dans la ville de leur choix. ">
+		<meta name="keywords" content="restaurant, romantique, gastronomique "/>
 		<meta name="auteur" content="Jérémie THERY"/>
 		<meta name="copyright" content="OpenClassrooms"/>
 		<title> La palette du goût</title>	
@@ -30,7 +31,12 @@
             </aside>
             <aside class="img_menu liste_menu">
                 <div class="nom-resto">
-                    <i class="far fa-heart"></i>
+                    <div class="no-like">
+						<i class="far fa-heart"></i>
+						</div>
+						<div class="no-like like">
+						<i class=" fas fa-heart"></i>
+                        </div>
                     <h1>La palette du goût</h1>
                 </div>
                 <h2>ENTRÉES</h2>
@@ -39,16 +45,15 @@
                         <h3>Fricassée d'escargot</h3>
                         <p class="detail">Au piment d'espelette</p>
                     </div>
-                    
                     <div class="prix">
                         <div class=" prix__valid ">
                         </div>  
-                        <div class="prix_valid validation">
+                        <div class=" validation">
                             <p class="tarif">35€</p>
                         </div>
                         <span> <i class="fas fa-check-circle"></i></span>
                     </div>
-                    
+      
                 </div>
                 <div class="btn_entrees">
                     <div class="intituler">
@@ -86,10 +91,12 @@
                         <p class="detail">Accompagné de sa ribambelle de<br> légumes</p>
                     </div>
                     <div class="X_prix">
+                        <div class=" X_prix__valid ">            
+                        </div>
                         <div class="X_validation">
                             <p class="X_tarif">40€</p>
                         </div>
-                        <span> <i class="fas fa-check-circle"></i></span>
+                        <span class="big-bloc"> <i class="fas fa-check-circle"></i></span>
                     </div>
                 </div>
 
