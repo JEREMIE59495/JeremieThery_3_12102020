@@ -525,6 +525,11 @@ img {
   float: left;
 }
 
+/*
+  .info_footer_lien {
+    display:flex;
+    flex-direction: column;
+  }*/
 .partenaire .fas {
   font-size: 0.7em;
   margin-right: 1em;
@@ -533,11 +538,28 @@ img {
 .proposition .fas {
   font-size: 0.8em;
   margin-right: 1em;
+  color: blue;
 }
 
-.proposition, .partenaire, .mentions, .contact {
+.proposition {
+  background: blue;
   width: 100%;
-  height: 1.7em;
+  height: 2em;
+  color: red;
+}
+
+.info_footer_lien .partenaire {
+  background: blue;
+  width: 100%;
+  height: 2em;
+  color: red;
+}
+
+.mentions {
+  background: blue;
+  width: 100%;
+  height: 2em;
+  color: red;
 }
 
 /*============ menu==========*/
@@ -1130,4 +1152,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */
