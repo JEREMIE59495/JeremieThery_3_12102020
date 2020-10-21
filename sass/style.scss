@@ -302,6 +302,7 @@
     font-weight: 800;
     margin-bottom:1.2em;
   }
+  
   .choisissez{
     background-color:rgb(246, 246, 246);
     width:19.2em;
@@ -313,15 +314,15 @@
     padding:0; 
   }
 
-.choisissez{
-  & :hover{
-    background-color: rgb(245,237,255);
-    border-radius:1em;
+  .choisissez{
+    & :hover{
+      background-color: rgb(245,237,255);
+      border-radius:1em;
+      }
+    &:hover i{
+      color:#9356DC;
     }
-  &:hover i{
-    color:#9356DC;
   }
-}
 
   .first, .second, .third{
     width:1em;
@@ -479,21 +480,21 @@
     color: black;
   }
 
-.no-like {
-  margin-top:1em;
-  margin-left:80%;
-  width:10%;
-  height:3em;
-  position:absolute;
-  padding:0;
-  color:black;
-}
- .like {
-  width:10%;
-  height:3em;
-  opacity:0.8;
-  padding:0;
-}
+  .no-like {
+    margin-top:1em;
+    margin-left:80%;
+    width:10%;
+    height:3em;
+    position:absolute;
+    padding:0;
+    color:black;
+  }
+  .like {
+    width:10%;
+    height:3em;
+    opacity:0.8;
+    padding:0;
+  }
   .description .far  {
     float:right;
     margin:0.1em 1em 0em 0em;
@@ -525,8 +526,7 @@
       display:none;
     }
   }
-  
-  
+   
   .pied_resto{
     width:auto;
     height:10em;
@@ -570,57 +570,54 @@
 
 /*============ menu==========*/
 /* animation bouton menu*/
-@keyframes btn_entrees{
-  0% {
-    transform-origin:50% bottom;
-    transform:scaleY(0);
-    opacity:0;
+  @keyframes btn_entrees{
+    0% {
+      transform-origin:50% bottom;
+      transform:scaleY(0);
+      opacity:0;
+    }
+
+    100%{
+      transform-origin:50% bottom;
+      transform:scaleY(1);
+      opacity:1;
+    }
   }
 
-  100%{
-    transform-origin:50% bottom;
-    transform:scaleY(1);
-    opacity:1;
+  @keyframes btn_plats{
+    0% {
+      transform-origin:50% bottom;
+      transform:scaleY(0);
+      opacity:0;
+    }
+    20% {
+      transform-origin:50% bottom;
+      transform:scaleY(0);
+      opacity:0;
+    }
+    100%{
+      transform-origin:50% bottom;
+      transform:scaleY(1);
+      opacity:1;
+    }
   }
-}
-
-@keyframes btn_plats{
-  0% {
-    transform-origin:50% bottom;
-    transform:scaleY(0);
-    opacity:0;
+  @keyframes btn_desserts{
+    0% {
+      transform-origin:50% bottom; 
+      transform:scaleY(0);
+      opacity:0;
+    }
+    20% {
+      transform-origin:50% bottom;
+      transform:scaleY(0);
+      opacity:0;
+    }
+    100%{
+      transform-origin:50% bottom;
+      transform:scaleY(1);
+      opacity:1;
+    }
   }
-  20% {
-    transform-origin:50% bottom;
-    transform:scaleY(0);
-    opacity:0;
-  }
-  100%{
-    transform-origin:50% bottom;
-    transform:scaleY(1);
-    opacity:1;
-  }
-}
-@keyframes btn_desserts{
-  0% {
-    transform-origin:50% bottom; 
-    transform:scaleY(0);
-    opacity:0;
-  }
-  20% {
-    transform-origin:50% bottom;
-    transform:scaleY(0);
-    opacity:0;
-  }
-  100%{
-    transform-origin:50% bottom;
-    transform:scaleY(1);
-    opacity:1;
-  }
-}
-
-
-
 /* fin d'animation bouton*/
 
   .entete-menu{
@@ -770,8 +767,7 @@
     float:middle;
     margin-top: 2em;
     margin-right:0.5em;
-    font-weight: bold; 
-    
+    font-weight: bold;    
   }
 
   .X_tarif{
@@ -801,7 +797,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  
   }
 
   .intituler{
@@ -845,6 +840,7 @@
     z-index:1;
     color:white;
   }
+
   .X_prix .big-bloc{
     transition:transform 400ms  ease-in-out;
     position:absolute;
@@ -855,27 +851,28 @@
     color:white;
   }
    
- .prix__valid{
-  background:#99E2D0;
-  width:4em;
-  height:4em; 
-  position:absolute;
-  margin-left:4em;
-  border-top-right-radius:1em ;
-  border-bottom-right-radius:1em ;
-  overflow:hidden;
- }
+  .prix__valid{
+    background:#99E2D0;
+    width:4em;
+    height:4em; 
+    position:absolute;
+    margin-left:4em;
+    border-top-right-radius:1em ;
+    border-bottom-right-radius:1em ;
+    overflow:hidden;
+  }
 
- .X_prix__valid{
-  background:#99E2D0;
-  width:4em;
-  height:5em; 
-  position:absolute;
-  margin-left:4em;
-  border-top-right-radius:1em ;
-  border-bottom-right-radius:1em ;
-  overflow:hidden;
- }
+  .X_prix__valid{
+    background:#99E2D0;
+    width:4em;
+    height:5em; 
+    position:absolute;
+    margin-left:4em;
+    border-top-right-radius:1em ;
+    border-bottom-right-radius:1em ;
+    overflow:hidden;
+  }
+
   .validation{
     background:white;
     width:3.5em;
@@ -913,6 +910,7 @@
     font-size:1em;
     margin-top:0.9em;
   }
+
   .pied_menu{
     width:auto;
     height:9em;
@@ -961,7 +959,6 @@
     &:active .intituler{
       width:60%;
     }
-   
   }
 
   .validation, .X_validation{
@@ -969,16 +966,14 @@
    
     transition: transform 400ms ease-in-out; 
   }
-
-
-
+}
 @media screen and (min-width:400px)and (max-width:599px){
   .prix, .X_prix{
     margin-left:63%; 
   }
 }
 
-}
+
   
    
 
