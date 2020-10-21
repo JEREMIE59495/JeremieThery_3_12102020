@@ -4,99 +4,203 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Site de planification de vacance pour permettre de trouver des hébergements et des activités dans la ville de leur choix. ">
-		<meta name="keywords" content="Hébergement, Acitvités, hébergement réputés"/>
-		<meta name="auteur" content="Jérémie THERY"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/typeface-shrikhand@1.1.13/index.min.css " rel="stylesheet" />
+        <meta name="description" content="Site de commande de menu. ">
+		<meta name="keywords" content="restaurant, romantique, gastronomique "/>
+		<meta name="author" content="Jérémie THERY"/>
 		<meta name="copyright" content="OpenClassrooms"/>
-
-		<title> La palette du goût</title>
-		
+		<title> À la française</title>	
 	</head>	
-	<body>
-		<header>
-            <div class="entete">
-                <img class="logo" src="images/logo/ohmyfood.png" alt="logo de la compagnie"/>
-            </div>       
-        </header>		
-        <section>
+	<body class="restaurant">
+		<header>      
+            <div class="entete-menu">
+                <div class="btn-retour">
+                    <a href="index.html"> <i class="fas fa-arrow-left"></i></a>
+                </div> 
+                <div class="logo_menu" >
+                    <img class="logo_menu_img" src="images/logo/ohmyfood.png" alt="logo de la compagnie"/>
+                </div>
+            </div>             
+        </header>
 
-        </section>	
-        <section>
-            <h1></h1>
-            <aside class="entrees">
-                <h2>ENTREES</h2>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
+        <section class="menu">
+            <aside class="img_menu">
+               <img src= " images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt= "A la française" />				
             </aside>
-            <aside class="plats">
+            <aside class="img_menu liste_menu">
+                <div class="nom-resto">
+                    <div class="no-like">
+						<i class="far fa-heart"></i>
+						</div>
+						<div class="no-like like">
+						<i class=" fas fa-heart"></i>
+                        </div>
+                    <h1>À la française</h1>
+                </div>
+                <h2>ENTRÉES</h2>
+                <div class="btn_entrees">
+                    <div class="intituler">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <p class="detail">Aux zests d'orange</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">
+                        </div>  
+                        <div class=" validation">
+                            <p class="tarif">25€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
+      
+                </div>
+                <div class="btn_entrees">
+                    <div class="intituler">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <p class="detail">Carotte,panais,topinanbour</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div> 
+                        <div class="validation">
+                            <p class="tarif">35€</p>
+                        </div>  
+                       <span> <i class="fas fa-check-circle"></i></span>
+    
+                    </div>
+                </div>
+                <div class="btn_entrees">
+                    <div class="intituler">
+                        <h3>Soupe à l'oignons</h3>
+                        <p class="detail">Revisitée</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">20€</p>
+                         </div>
+                         <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
+                </div>
                 <h2>PLATS</h2>
-                <div>
-                    <p></p>
-                    <p></p>
+                <div class="btn_plats">
+                    <div class="intituler">
+                        <h3>Coquille Saint-Jacques</h3>
+                        <p class="detail">Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">40€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
+
+                <div class="btn_plats">
+                    <div class="intituler">
+                        <h3>Magret de canard</h3>
+                        <p class="detail">Et parmentier de pomme de terre</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">35€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
+
+                <div class="btn_plats">
+                    <div class="intituler">
+                        <h3>Pigeonnau dIlle-et-Vilaine</h3>
+                        <p class="detail">Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">44€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
+                
+                <h2>DESSERTS</h2>
+                <div class="btn_desserts">
+                    <div class="intituler">
+                        <h3>Pétales de violettes glacés</h3>
+                        <p class="detail">Et purée de noisettes</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">18€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
+
+                <div class="btn_desserts">
+                    <div class="intituler">
+                        <h3>Fondant au chocolat</h3>
+                        <p class="detail">Revisité</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">22€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
-            </aside>
-            <aside class="desserts">
-                <h2>DESSERT</h2>
-                <div>
-                    <p></p>
-                    <p></p>
+
+                <div class="btn_desserts">
+                    <div class="intituler">
+                        <h3>Millefeuille croustillant</h3>
+                        <p class="detail">Myrtilles et pâte d'amande</p>
+                    </div>
+                    <div class="prix">
+                        <div class=" prix__valid ">            
+                        </div>
+                        <div class="validation">
+                            <p class="tarif">23€</p>
+                        </div>
+                        <span> <i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <p></p>
+                <div class="commande">
+                    <p class="btn_commande">Commander</p>
                 </div>
             </aside>
         </section>	
-        <footer>
-               
+
+        <footer class="pied_menu">
+            <div class="info_footer_menu">
+				<div class="pied_de_page_menu">
+					<img class="logo_pied" src="images/logo/ohmyfood.png" alt="logo de la compagnie"/>
+				</div>
+				<div class="info_footer_lien_menu">
+					<div class="proposition">	
+						<a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+					</div> 
+					<div class="partenaire">	
+						<a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+					</div> 
+					<div>  
+						 <a href="">Mentions légales</a>
+					</div>
+					<div>
+					    <a href="mailto:nullepart@mozilla.org">Contact</a>
+					</div>
+				</div>
+			</div>
         </footer>	
-     </body>	
+    </body>	
 </html>	
-		

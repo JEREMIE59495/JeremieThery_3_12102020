@@ -625,15 +625,15 @@
 
   .entete-menu{
     width:100%;
-    height:2.8em;
+    height:2.4em;
     padding-top:1.5em;
     padding-left:auto;
     padding-right:auto;
   } 
 
   .logo_menu{
-    width:11em;
-    height:2em;
+    width:10em;
+    height:1.8em;
     margin-top:0em;
     padding-bottom:0em;
     margin-left:auto;
@@ -675,7 +675,11 @@
     width: 100%;
     height: 16.5em;
     opacity: 1;
-    background: green;
+  }
+
+  .img_menu_cover{
+    object-fit: cover;
+    object-position:0 -7em;
   }
 
   .liste_menu {
@@ -763,7 +767,7 @@
   }
 
   .tarif{
-    float:left;
+    float:middle;
     margin-top: 2em;
     margin-right:0.5em;
     font-weight: bold; 
@@ -771,7 +775,7 @@
   }
 
   .X_tarif{
-    float:right;
+    float:middle;
     margin-top: 2em;
     margin-right:0.5em;
     font-weight: bold; 
@@ -845,7 +849,7 @@
     transition:transform 400ms  ease-in-out;
     position:absolute;
     margin-top:2em;
-    margin-left:6em;
+    margin-left:4.8em;
     float:right;
     z-index:1;
     color:white;
@@ -883,7 +887,7 @@
 
   .X_validation{
     background:white;
-    width:5.7em;
+    width:3.5em;
     height:5em;
     float:right;
     position:relative;
