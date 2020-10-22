@@ -687,7 +687,7 @@
   .liste_menu {
     width:100%;
     height:auto;
-    z-index: 3;
+    position:absolute;
     margin-top:13.5em;
     background:rgb(246,246,246);
     border-top-left-radius: 2.5em;
@@ -721,8 +721,7 @@
     margin:-0.5em 0.2em 0em 0em;
     font-size:1.5em;
     position: relative;
-    z-index:1;
-    
+    z-index:1; 
   }
 
   .nom-resto .fas {
@@ -820,7 +819,7 @@
     height:4em;
     margin-left:59%;
     overflow:hidden;
-    position:absolute;
+   /* position:absolute;*/
     border-top-right-radius:1em ;
     border-bottom-right-radius:1em ;
   }
@@ -835,15 +834,19 @@
     border-bottom-right-radius:1em ;
     overflow:hidden;
   }
-  
+
   .prix span{
     transition:transform 400ms  ease-in-out;
     position:absolute;
     margin-top:1.5em;
-    margin-left:6.2em;
+    margin-left:5.2em;
     float:right;
-    z-index:1;
-    color:white;
+    color:rgb(246,246,246);
+  }
+
+  .choix_entrees{
+    width:100%;
+    position:relative;
   }
 
   .X_prix .big-bloc{
@@ -858,10 +861,10 @@
    
   .prix__valid{
     background:#99E2D0;
-    width:4em;
+    width:3.2em;
     height:4em; 
     position:absolute;
-    margin-left:4em;
+    margin-left:3.8em;
     border-top-right-radius:1em ;
     border-bottom-right-radius:1em ;
     overflow:hidden;
@@ -950,7 +953,7 @@
   /*  animation validation menu*/
   .btn_entrees ,.X_btn_plats{
     &:active .prix span{
-      transform: translate(-3em,0) rotate(360deg);
+      transform: translate(-2em,0) rotate(360deg);
     }
     &:active .X_prix .big-bloc{
       transform: translate(-1.5em,0) rotate(360deg);
@@ -1058,6 +1061,20 @@
     float:left;
     margin-left:15%;
   }
+}
+
+/*=======menu======*/
+.nom-resto .no-like {
+  width:100%;
+  margin-left:0;
+}
+
+.nom-resto .far{
+  margin-right:2em;
+}
+
+.nom-resto .fas{
+  margin-right:7em;
 }
   
 @media screen and (min-width:900px){
