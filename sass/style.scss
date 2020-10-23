@@ -734,7 +734,7 @@ img{
 }
 
 .nom-resto h1{
-  width:98%;
+ /* width:98%;*/
   font-family:'shrikhand';
   font-size:1.5em;
   text-align:left;
@@ -830,7 +830,7 @@ h3{
 
 .intituler{
   float:left;
-/*  width:90%;*/
+ /*width:90%;*/
   position:absolute;
   z-index:1;
   margin-top:0.6em;
@@ -943,7 +943,7 @@ h3{
   margin-top:0.9em;
 }
 
-.pied_menu{
+.pied_menu, .pied_menu_francaise, .pied_menu_enchantee{
   width:auto;
   height:10em;
   margin-left:auto;
@@ -951,6 +951,14 @@ h3{
   margin-top:33em;
   background:rgb(53, 53, 53);
   padding:1.4em;
+}
+
+.pied_menu_francaise{
+  margin-top:32em;
+}
+
+.pied_menu_enchantee{
+  margin-top:37em;
 }
 
 .pied_de_page_menu{
@@ -1073,6 +1081,10 @@ h3{
     margin-top:33em;
     height:8em;
   }
+
+  .pied_menu_francaise, .pied_menu_enchantee{
+height:8em;
+  }
 }
 
 @media screen and (min-width:900px){
@@ -1081,6 +1093,7 @@ h3{
     width:auto;
     height:5em;
   }
+
   .logo_resto{ 
     width:25%;
     height:2.5em;
@@ -1096,9 +1109,11 @@ h3{
     height:13em;
     background: rgb(246, 246, 246);
   }
+
   .search_box{
     width:25%;
   }
+
   .search i{
     width:1em;
     margin-left:1%;
@@ -1115,41 +1130,44 @@ h3{
     height:9em;
     margin-top:1em;
   }
+
   .info h6{
     text-align:center;
     margin-top:0.5em;
-     }
+  }
 
   .explication{
     display:flex;
     flex-wrap:space-between;
   }
+
   .texte{
     padding-top:1.8em;
     padding-bottom:1.6em;
     margin:0em;
   }
 
- #conteneur{
-   width:auto;
-   display:flex;
-   flex-wrap: wrap;
-   padding-left:1%;
+  #conteneur{
+    width:auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:1%;
+  }
  
- }
- 
- #conteneur h6{
+  #conteneur h6{
    width:100%;
    flex-direction: column;
- }
+  }
 
   .bloc_resto{
     display:flex;
     width:21%;
   }
+
   .image-cover, .image-cover1, .image-cover2, .image-cover3 {
     object-position:0 0em;
   }
+
  .image-cover1 {
     object-position:0 -4em;
   }
@@ -1157,85 +1175,101 @@ h3{
   .no-like {
     margin-left:12%;
   }
-.pied_resto{
-  height:5em;
-}
 
+  .pied_resto{
+    height:4em;
+  }
 
   .pied_de_page{
     margin-left:auto;
     margin-right:auto;
-   }
+  }
 
-   .info_footer_lien {
-     width:100%;
-     display:flex;
-     justify-content: space-around;
-   }
+  .info_footer_lien {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+  }
    
   .proposition, .partenaire, .mentions, .contact {
   width:20%;
   height:2em;
   }
- /*===========menu=========*/
- .menu{
-   height:45em;
- }
- .img_menu{
-   width:100%;
- }
- .nom-resto{
-  width:100%;
-}
+  /*===========menu=========*/
+  .menu{
+    height:45em;
+  }
+  
+  .img_menu{
+    width:100%;
+  }
 
-.nom-resto .far{
-  margin-right:34.4%;
-  margin-top:0.5em;
-}
+  .nom-resto{
+    width:100%;
+  }
+  .nom-resto .no-like {
+    width:100%;
+    margin-left:0;
+  }
 
-.nom-resto .fas{
-  margin-right:35%;
-  margin-top:3em;
-}
+  .nom-resto .far{
+    margin-right:34.4%;
+    margin-top:0.5em;
+  }
 
-.nom-resto h1{
-  margin-left:33%;
-  width:auto;
-}
+  .nom-resto .fas{
+    margin-right:35%;
+    margin-top:3em;
+  }
 
- .choix_entrees, .choix_plats, .choix_desserts{
-   width: 33%;
-   background:rgb(246,246,246);
-   padding-bottom:1em;
-   margin-right: 0.1em;
-   margin-left: 0.1em;
-   border-radius:1em;
- }
-.liste_menu {
-  background:white;
-  display:flex;
-  flex-wrap: wrap;
-}
+  .nom-resto h1{
+    margin-left:33%;
+    width:auto;
+  }
 
-.btn_entrees, .X_btn_plats{
-  margin-left:0.5em;
-  margin-right:0.5em;
-}
+  .choix_entrees, .choix_plats, .choix_desserts{
+    width: 32.5%;
+    background:rgb(246,246,246);
+    padding-bottom:1em;
+    margin-right: 0.1em;
+    margin-left: 0.3em;
+    border-radius:1em;
+  }
 
-.commande{
-  width:30%;
-  margin-top:1em;
-  margin-bottom:0em;
-}
+  .liste_menu {
+    background:white;
+    display:flex;
+    flex-wrap: wrap;
+  }
 
-.img_menu img {
-  position: relative;
-  width: 50%;
-  margin-left:auto;
-  margin-right:auto;
-  border-radius:1em;
-}
+  .btn_entrees, .X_btn_plats{
+    margin-left:0.5em;
+    margin-right:1em;
+  }
 
+  .commande{
+    width:30%;
+    margin-top:1em;
+    margin-bottom:0em;
+  }
+
+  .img_menu img {
+    position: relative;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:1em;
+  }
+
+  .pied_menu, .pied_menu_francaise{
+    height:6em;
+    margin-top:0em;
+  }
+
+  .pied_menu_enchantee{
+    height:6em;
+    margin-top:4em;
+  }
 }
 
    
