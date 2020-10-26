@@ -13,7 +13,7 @@
     background: #a7a6a6;
     animation: font-loading 5000ms;
     position: absolute;
-    z-index: 0;
+    z-index: 2;
     opacity: 0;
 ;
   }
@@ -39,7 +39,7 @@
     animation: load 5000ms;
     opacity: 0;
     position: absolute;
-    z-index: 0;
+    z-index: 3;
       &__circle--0{
         width: 9em;
         height: 9em;
@@ -132,30 +132,35 @@
       transform: scale(1);
       opacity: 0.9;
       margin-top: 50%;
+    
     }
       
     50%{
       transform: scale(1);
       opacity: 0.9;
       margin-top: 50%;
+     
     }
 
     80%{
       transform: scale(1);
       opacity: 0.9;
       margin-top: 50%;
+   
     }
 
     95%{
       transform: scale(1);
       opacity: 0.9;
       margin-top: 50%;
+      
     }
 
     100%{
       transform: scale(0);
       opacity: 0;
       margin-top: 50%;
+    
     }
   }
 
@@ -979,6 +984,61 @@ h3{
 }
 
 @media screen and (min-width:600px) and (max-width:899px){
+/*===== loading spinner ===*/
+  @keyframes font-loading {
+    0%{
+      transform: scaleY(42);
+      opacity: 0.9;
+    }
+    
+    98%{
+      transform: scaleY(42);
+      opacity: 0.9;
+    }
+
+    100%{
+      transform: scaleY(0);
+      opacity: 0;
+    }
+  }
+  @keyframes load {
+    0%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 18%;
+      margin-left:40%;
+    }
+      
+    50%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 18%;
+      margin-left:40%;
+     
+    }
+
+    80%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 18%;
+      margin-left:40%;
+    }
+
+    95%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 18%;
+      margin-left:40%;
+    }
+
+    100%{
+      transform: scale(0);
+      opacity: 0;
+      margin-top: 15%;
+      margin-left:40%;
+    }
+  }
+  /*======= fin loading spinner====*/
 
   .logo_resto{ 
     width: 25%;
@@ -1089,6 +1149,59 @@ h3{
 }
 
 @media screen and (min-width:900px){
+  /*===== loading spinner =====*/
+  @keyframes font-loading {
+    0% {
+      transform: scaleY(28);
+      opacity: 0.9;
+    }
+    98% {
+      transform: scaleY(28);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes load {
+    0%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 20%;
+      margin-left: 45%;
+    }
+      
+    50%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 20%;
+      margin-left: 45%;
+    }
+
+    80%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 20%;
+      margin-left: 45%;
+    }
+
+    95%{
+      transform: scale(1);
+      opacity: 0.9;
+      margin-top: 20%;
+      margin-left: 45%;
+    }
+
+    100%{
+      transform: scale(0);
+      opacity: 0;
+      margin-top: 20%;
+      margin-left: 45%;
+    }
+  }
+/*====== fin loading spinner =====*/
 
   .entete_resto{
     width: auto;
