@@ -8,7 +8,7 @@
     "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed/"
   },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git+https://github.com/JEREMIE59495/JeremieThery_3_12102020.git"
   },
   "author": "",
