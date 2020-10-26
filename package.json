@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git", 
-    "url": "git+https://github.com/JEREMIE59495/Projet-3.git"
+    "url": "git+https://github.com/JEREMIE59495/JeremieThery_3_12102020.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JEREMIE59495/Projet-3/issues"
+    "url": "https://github.com/JEREMIE59495/JeremieThery_3_12102020/issues"
   },
-  "homepage": "https://github.com/JEREMIE59495/Projet-3#readme",
+  "homepage": "https://github.com/JEREMIE59495/JeremieThery_3_12102020#readme",
   "dependencies": {
     "sass": "^1.27.0"
   }
