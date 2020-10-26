@@ -242,6 +242,12 @@
   &:active .X_validation{
     transform:translate(-3em,0);
   }
+  & :active .detail{
+    width:60%;
+  }
+  & :active h3{
+    width:60%;
+  }
 }
 
 .validation, .X_validation{
@@ -790,14 +796,12 @@ img{
 }
 
 .tarif{
-  float: middle;
   margin-top: 2em;
   margin-right: 0.5em;
   font-weight: bold;    
 }
 
 .X_tarif{
-  float: middle;
   margin-top: 2em;
   margin-right: 0.5em;
   font-weight: bold; 
@@ -827,7 +831,7 @@ h3{
 
 .intituler{
   float: left;
- /*width:100%;*/
+  width:90%;
   position: absolute;
   z-index: 1;
   margin-top: 0.6em;
@@ -1244,7 +1248,9 @@ h3{
     margin-left: 0.5em;
     margin-right: 1em;
   }
-
+.intituler{
+  width:auto;
+}
   .commande{
     width: 30%;
     margin-top: 1em;

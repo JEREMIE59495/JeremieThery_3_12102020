@@ -217,6 +217,12 @@
 .btn_entrees:active .X_validation, .btn_plats:active .X_validation, .btn_desserts:active .X_validation, .X_btn_plats:active .X_validation {
   transform: translate(-3em, 0);
 }
+.btn_entrees :active .detail, .btn_plats :active .detail, .btn_desserts :active .detail, .X_btn_plats :active .detail {
+  width: 60%;
+}
+.btn_entrees :active h3, .btn_plats :active h3, .btn_desserts :active h3, .X_btn_plats :active h3 {
+  width: 60%;
+}
 
 .validation, .X_validation {
   transform-origin: 100% 0;
@@ -748,14 +754,12 @@ img {
 }
 
 .tarif {
-  float: middle;
   margin-top: 2em;
   margin-right: 0.5em;
   font-weight: bold;
 }
 
 .X_tarif {
-  float: middle;
   margin-top: 2em;
   margin-right: 0.5em;
   font-weight: bold;
@@ -785,7 +789,7 @@ h3 {
 
 .intituler {
   float: left;
-  /*width:100%;*/
+  width: 90%;
   position: absolute;
   z-index: 1;
   margin-top: 0.6em;
@@ -1199,6 +1203,10 @@ h3 {
   .btn_entrees, .btn_plats, .btn_desserts, .X_btn_plats {
     margin-left: 0.5em;
     margin-right: 1em;
+  }
+
+  .intituler {
+    width: auto;
   }
 
   .commande {

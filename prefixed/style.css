@@ -316,21 +316,27 @@
 /* fin d'animation bouton*/
 /*  animation validation menu*/
 .btn_entrees:active .prix span, .btn_plats:active .prix span, .btn_desserts:active .prix span, .X_btn_plats:active .prix span {
-  transform: translate(-2em, 0) rotate(360deg);
+  -webkit-transform:translate(-2em, 0) rotate(360deg) ;
+          transform: translate(-2em, 0) rotate(360deg);
 }
 .btn_entrees:active .X_prix .big-bloc, .btn_plats:active .X_prix .big-bloc, .btn_desserts:active .X_prix .big-bloc, .X_btn_plats:active .X_prix .big-bloc {
-  transform: translate(-2em, 0) rotate(360deg);
+  -webkit-transform: translate(-2em, 0) rotate(360deg);
+          transform: translate(-2em, 0) rotate(360deg);
 }
 .btn_entrees:active .validation, .btn_plats:active .validation, .btn_desserts:active .validation, .X_btn_plats:active .validation {
-  transform: translate(-3em, 0);
+  -webkit-transform: translate(-3em,0);
+          transform: translate(-3em, 0);
 }
 .btn_entrees:active .X_validation, .btn_plats:active .X_validation, .btn_desserts:active .X_validation, .X_btn_plats:active .X_validation {
-  transform: translate(-3em, 0);
+  -webkit-transform: translate(-3em,0);
+          transform: translate(-3em, 0);
 }
 
 .validation, .X_validation {
-  transform-origin: 100% 0;
-  transition: transform 400ms ease-in-out;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transition: transform 400ms ease-in-out; ;
+          transition: transform 400ms ease-in-out;
 }
 
 /*===== fin animation validation ====*/
