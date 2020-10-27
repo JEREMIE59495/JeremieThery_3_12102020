@@ -667,8 +667,6 @@ z-index: 3;
   width: 100%;
   height: 2.4em;
   padding-top: 1.5em;
-  padding-left: auto;
-  padding-right: auto;
 } 
 
 .logo_menu{
@@ -1249,7 +1247,7 @@ h3{
 
   .explication{
     display: flex;
-    flex-wrap: space-between;
+    justify-content: space-between;
   }
 
   .choisissez{
