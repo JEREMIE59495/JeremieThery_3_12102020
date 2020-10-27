@@ -18,7 +18,7 @@
 }
 
 .load .fas {
-  -webkit-transform: rotate (-2160deg);
+  -webkit-transform: rotate(-2160deg);
           transform: rotate(-2160deg);
   -webkit-transition:transform 5000ms ease-in-out;
           transition: transform 5000ms ease-in-out;
