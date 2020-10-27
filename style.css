@@ -218,10 +218,10 @@
   transform: translate(-3em, 0);
 }
 .btn_entrees :active .detail, .btn_plats :active .detail, .btn_desserts :active .detail, .X_btn_plats :active .detail {
-  width: 60%;
+  width: 65%;
 }
 .btn_entrees :active h3, .btn_plats :active h3, .btn_desserts :active h3, .X_btn_plats :active h3 {
-  width: 60%;
+  width: 65%;
 }
 
 .validation, .X_validation {
@@ -263,7 +263,7 @@ body {
 nav {
   width: 100%;
   margin-top: 0.3em;
-  height: 16.5em;
+  height: 19.5em;
   background: #f6f6f6;
 }
 
@@ -308,6 +308,7 @@ input ::placeholder {
   font-weight: 800;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 2em;
   text-align: center;
   margin-bottom: 0em;
 }
@@ -328,13 +329,12 @@ input ::placeholder {
 
 .explore {
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 50%;
-  height: 3em;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  width: 60%;
+  height: 3.5em;
+  padding-top: 0.2em;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 1.5em;
+  border-radius: 2em;
   font-family: "Roboto Regular", arial;
   font-size: 0.8em;
 }
@@ -360,7 +360,7 @@ a {
 
 .choisissez, .composition, .Deguster {
   background-color: #f6f6f6;
-  width: 19.2em;
+  width: auto;
   height: 4.5em;
   border-radius: 1em;
   margin: 0em 0em 1em 0em;
@@ -400,7 +400,7 @@ a {
   width: 2em;
   height: 2em;
   float: left;
-  color: white;
+  color: #7e7e7e;
   font-size: 1em;
   margin: 1em 0.5em 0em 1em;
   padding: 0.8em 0.2em 0.2em 0.2em;
@@ -435,7 +435,7 @@ h6 {
 .bloc_resto {
   background: white;
   width: auto;
-  height: 15em;
+  height: 14em;
   border-radius: 1em;
   margin: 0em 1em 1em 1em;
 }
@@ -640,7 +640,6 @@ img {
 .logo_menu_img {
   margin-top: 0;
   margin-bottom: 3em;
-  /*  float:right;*/
 }
 
 .btn-retour {
@@ -699,7 +698,6 @@ img {
 }
 
 .nom-resto h1 {
-  /* width:98%;*/
   font-family: "shrikhand";
   font-size: 1.5em;
   text-align: left;
@@ -802,7 +800,6 @@ h3 {
   width: 7em;
   height: 4em;
   overflow: hidden;
-  /* position:absolute;*/
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
 }
@@ -812,7 +809,6 @@ h3 {
   width: 7em;
   height: 5em;
   margin-left: 59%;
-  /* position:absolute;*/
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   overflow: hidden;
@@ -996,7 +992,7 @@ h3 {
   nav {
     width: 100%;
     margin-top: 0.3em;
-    height: 13em;
+    height: 15em;
     background: #f6f6f6;
   }
 
@@ -1017,6 +1013,10 @@ h3 {
   .info h6 {
     text-align: center;
     margin-top: 1em;
+  }
+
+  .choisissez, .composition, .Deguster {
+    width: 19.2em;
   }
 
   #conteneur {
@@ -1156,10 +1156,7 @@ h3 {
   }
 
   nav {
-    width: 100%;
-    margin-top: 0.3em;
-    height: 13em;
-    background: #f6f6f6;
+    height: 14em;
   }
 
   .search_box {
@@ -1191,6 +1188,10 @@ h3 {
   .explication {
     display: flex;
     flex-wrap: space-between;
+  }
+
+  .choisissez, .composition, .Deguster {
+    width: 19.2em;
   }
 
   .texte {
