@@ -15,21 +15,22 @@
     position: absolute;
     z-index: 2;
     opacity: 0;
-;
   }
 
   .load .fas{
     margin-top:0.5em;
     font-size: 2em;
-    transform: rotate(0deg); 
+    animation:fasrotate 5000ms
   }
 
-  .load {
-    .fas {   
-      transform: rotate(-2160deg);
-      transition: transform 5000ms ease-in-out;
-    }
+@keyframes fasrotate{
+  0%{
+    transform: rotate(0deg)
   }
+  100%{
+    transform: rotate(2160deg)
+  }
+}
 
   .load{
     width: 9em;
@@ -91,8 +92,7 @@
         margin-left: 40px;
         position: absolute;
         animation: circle $anim-dur backwards;
-      } 
-      
+      }     
   }
 
   .load__circle--0{
@@ -736,6 +736,10 @@ img{
   font-weight: normal;
   border-bottom: 0.2em solid #99E2D0;
   width: 2.5em
+}
+
+article{
+  margin-bottom:3em;
 }
 
 .nom-resto h1{
