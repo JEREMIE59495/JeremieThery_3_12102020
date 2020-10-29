@@ -1,27 +1,27 @@
 /*============ mode responsive ==============*/
  
 
-  /*loading spinner*/
+/*loading spinner*/
 
-  $anim-dur: 3000ms;
-  $num-circles: 5;
-  $anim-delay:$anim-dur/$num-circles;
+$anim-dur: 3000ms;
+$num-circles: 5;
+$anim-delay:$anim-dur/$num-circles;
 
-  .font-loading {
-    width: 100%;
-    height: 4em;
-    background: #a7a6a6;
-    animation: font-loading 5000ms;
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-  }
+.font-loading {
+  width: 100%;
+  height: 4em;
+  background: #a7a6a6;
+  animation: font-loading 5000ms;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
 
-  .load .fas{
-    margin-top:0.5em;
-    font-size: 2em;
-    animation:fasrotate 5000ms
-  }
+.load .fas{
+  margin-top:0.5em;
+  font-size: 2em;
+  animation:fasrotate 5000ms
+}
 
 @keyframes fasrotate{
   0%{
@@ -32,159 +32,152 @@
   }
 }
 
-  .load{
-    width: 9em;
-    height: 9em;
-    margin-top: 0%;
-    margin-left: 0%;
-    animation: load 5000ms;
+.load{
+  width: 9em;
+  height: 9em;
+  margin-top: 0%;
+  margin-left: 0%;
+  animation: load 5000ms;
+  opacity: 0;
+  position: absolute;
+  z-index: 3;
+    &__circle--0{
+      width: 9em;
+      height: 9em;
+      background: #9356DC;
+      opacity: 0.5;
+      border-radius: 50%;
+      position: absolute;
+      animation: circle $anim-dur backwards ;
+    }
+    &__circle--1{
+      width: 7.7em;
+      height: 7.7em;
+      background: #a7a6a6;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 10px;
+      animation: circle $anim-dur backwards;
+    }
+    &__circle--2{
+      width: 6.5em;
+      height: 6.5em;
+      border-radius:  50%;
+      background: #FF79DA;
+      opacity: 0.5;
+      margin-top: 20px;
+      margin-left :20px;
+      position: absolute;
+      animation: circle $anim-dur backwards;
+    }   
+    &__circle--3{
+      width: 5.2em;
+      height: 5.2em;
+      border-radius: 50%;
+      margin-top: 0em;
+      background: #a7a6a6;
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 30px;
+      animation: circle $anim-dur backwards;
+    }
+    &__circle--4{
+      width: 4em;
+      height: 4em;
+      background :#99E2D0;
+      opacity: 0.5;
+      border-radius: 50%;
+      margin-top: 40px;
+      margin-left: 40px;
+      position: absolute;
+      animation: circle $anim-dur backwards;
+    }     
+}
+
+.load__circle--0{
+animation-delay: 1600ms;   
+}
+
+.load__circle--1{
+animation-delay: 1200ms;
+}
+
+.load__circle--2{
+animation-delay: 800ms;
+}
+
+.load__circle--3{
+animation-delay: 400ms;
+}
+
+.load__circle--4{
+animation-delay: 0ms;
+}
+
+@keyframes circle {
+  0% {
+      transform: scale(0.1);
+      opacity: 0;   
+  }
+  100% {
+      transform: scale(1.0);
+      opacity:1;
+  }
+}
+
+@keyframes load {
+  0%{
+    transform: scale(1);
+    opacity:1;
+    margin-top: 50%;
+    margin-left:30%;
+  }
+  50%{
+    transform: scale(1);
+    opacity: 1;
+    margin-top: 50%;
+    margin-left:30%;
+  }
+  80%{
+    transform: scale(1);
+    opacity:1;
+    margin-top: 50%;
+    margin-left:30%;
+  }
+  95%{
+    transform: scale(1);
+    opacity:1;
+    margin-top: 50%;
+    margin-left:30%; 
+  }
+  100%{
+    transform: scale(0);
     opacity: 0;
-    position: absolute;
-    z-index: 3;
-      &__circle--0{
-        width: 9em;
-        height: 9em;
-        background: #9356DC;
-        opacity: 0.5;
-        border-radius: 50%;
-        position: absolute;
-        animation: circle $anim-dur backwards ;
-      }
-      &__circle--1{
-        width: 7.7em;
-        height: 7.7em;
-        background: #a7a6a6;
-        border-radius: 50%;
-        position: absolute;
-        margin-left: 10px;
-        margin-top: 10px;
-        animation: circle $anim-dur backwards;
-      }
-      &__circle--2{
-        width: 6.5em;
-        height: 6.5em;
-        border-radius:  50%;
-        background: #FF79DA;
-        opacity: 0.5;
-        margin-top: 20px;
-        margin-left :20px;
-        position: absolute;
-        animation: circle $anim-dur backwards;
-      }   
-      &__circle--3{
-        width: 5.2em;
-        height: 5.2em;
-        border-radius: 50%;
-        margin-top: 0em;
-        background: #a7a6a6;
-        position: absolute;
-        margin-left: 30px;
-        margin-top: 30px;
-        animation: circle $anim-dur backwards;
-      }
-      &__circle--4{
-        width: 4em;
-        height: 4em;
-        background :#99E2D0;
-        opacity: 0.5;
-        border-radius: 50%;
-        margin-top: 40px;
-        margin-left: 40px;
-        position: absolute;
-        animation: circle $anim-dur backwards;
-      }     
+    margin-top: 50%;
+    margin-left:30%;
   }
+}
 
-  .load__circle--0{
-  animation-delay: 1600ms;   
+@keyframes font-loading {
+  0%{
+    transform: scaleY(65);
+    opacity: 0.9;
   }
-
-  .load__circle--1{
-  animation-delay: 1200ms;
+  98%{
+    transform: scaleY(65);
+    opacity: 0.9;
   }
-
-  .load__circle--2{
-  animation-delay: 800ms;
+  100%{
+    transform: scaleY(0);
+    opacity: 0;
   }
+}
 
-  .load__circle--3{
-  animation-delay: 400ms;
-  }
-
-  .load__circle--4{
-  animation-delay: 0ms;
-  }
-
-  @keyframes circle {
-    0% {
-        transform: scale(0.1);
-        opacity: 0;   
-    }
-
-    100% {
-        transform: scale(1.0);
-        opacity:1;
-    }
-  }
-
-  @keyframes load {
-    0%{
-      transform: scale(1);
-      opacity:1;
-      margin-top: 50%;
-      margin-left:30%;
-    
-    }
-      
-    50%{
-      transform: scale(1);
-      opacity: 1;
-      margin-top: 50%;
-      margin-left:30%;
-    }
-
-    80%{
-      transform: scale(1);
-      opacity:1;
-      margin-top: 50%;
-      margin-left:30%;
-    }
-
-    95%{
-      transform: scale(1);
-      opacity:1;
-      margin-top: 50%;
-      margin-left:30%; 
-    }
-
-    100%{
-      transform: scale(0);
-      opacity: 0;
-      margin-top: 50%;
-      margin-left:30%;
-    }
-  }
-
-  @keyframes font-loading {
-    0%{
-      transform: scaleY(65);
-      opacity: 0.9;
-    }
-    
-    98%{
-      transform: scaleY(65);
-      opacity: 0.9;
-    }
-
-    100%{
-      transform: scaleY(0);
-      opacity: 0;
-    }
-  }
   /*==== fin loading spinner====*/
-
  /* animation bouton menu*/
- @keyframes btn_entrees{
+
+@keyframes btn_entrees{
   0% {
     transform-origin: 50% bottom;
     transform: scaleY(0);
@@ -573,11 +566,11 @@ img {
   padding: 0;
   color:black;
 }
+
 .like {
   width: 10%;
   height: 3em;
-  opacity: 0.8;
-  
+  opacity: 0.8; 
 }
 
 .description .far  {
@@ -597,7 +590,7 @@ img {
   z-index: 0;
   color:white;
   transition:transform 400ms ease-in-out;
-  }
+}
   
 .description, .nom-resto {
   &:hover .fas{
@@ -983,7 +976,8 @@ h3{
 }
 
 @media screen and (min-width:600px) and (max-width:899px){
-/*===== loading spinner ===*/
+
+  /*===== loading spinner ===*/
   @keyframes font-loading {
     0%{
       transform: scaleY(44);
@@ -1000,6 +994,7 @@ h3{
       opacity: 0;
     }
   }
+
   @keyframes load {
     0%{
       transform: scale(1);
@@ -1077,17 +1072,17 @@ h3{
     width:19.2em;
   }
 
- #conteneur{
+  #conteneur{
    width: auto;
    display: flex;
    flex-wrap: wrap;
    padding-left: 1%;
- }
+  }
  
- #conteneur h6{
+  #conteneur h6{
    width: 100%;
    flex-direction: column;
- }
+  }
 
   .bloc_resto{
     display: flex;
@@ -1152,6 +1147,7 @@ h3{
 }
 
 @media screen and (min-width:900px){
+
   /*===== loading spinner =====*/
   @keyframes font-loading {
     0% {
@@ -1175,28 +1171,24 @@ h3{
       margin-top: 20%;
       margin-left: 45%;
     }
-      
     50%{
       transform: scale(1);
       opacity: 0.9;
       margin-top: 20%;
       margin-left: 45%;
     }
-
     80%{
       transform: scale(1);
       opacity: 0.9;
       margin-top: 20%;
       margin-left: 45%;
     }
-
     95%{
       transform: scale(1);
       opacity: 0.9;
       margin-top: 20%;
       margin-left: 45%;
     }
-
     100%{
       transform: scale(0);
       opacity: 0;
@@ -1365,9 +1357,11 @@ h3{
     margin-left: 0.5em;
     margin-right: 1em;
   }
-.intituler{
-  width:auto;
-}
+  
+  .intituler{
+    width:auto;
+  }
+
   .commande{
     width: 30%;
     margin-top: 1em;
