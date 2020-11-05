@@ -274,17 +274,16 @@ body{
 
 .entete_resto{
   width: auto;
-  height: 3.8em;
+  height: 2.5em;
   margin: 0;
+  padding-top:0em;
+  padding-bottom: 0.5em;
   box-shadow: 0em 0.4em 0.4em rgb(213, 213, 213);
 }
 
-.logo_resto{ 
-  width: 45%;
-  height: 1.7em;
-  margin-top: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
+.titre-site {
+  font-family: "shrikhand";
+  font-size: 1.8em;
 }
 
 nav{
@@ -620,11 +619,12 @@ img {
   padding: 1.4em;
 }
 
-.pied_de_page{
-  width: 7em;
-  font-size: 0.9em;
-  margin-bottom: 1.5em;
-  filter: invert(1);
+.titre-site-footer{
+font-size: 1.2em;
+margin-top: 0em;
+margin-bottom: 1em;
+font-family: "shrikhand";
+filter: invert(1);
 }
 
 .info_footer_lien a{
@@ -668,9 +668,10 @@ z-index: 3;
 } 
 
 .logo_menu{
-  width: 10em;
-  height: 1.8em;
-  margin-top: 0em;
+  width:50%;
+  font-family:"shrikhand";
+  font-size: 0.9em;
+  margin-top: -2em;
   padding-bottom: 0em;
   margin-left: auto;
   margin-right: auto;
@@ -684,9 +685,10 @@ z-index: 3;
 .btn-retour{
   width: 3em;
   height: 2em;
+  font-size: 0.8em;
   float: left;
   margin-left: 0.5em;
-  padding-top: 0.5em;
+  padding-top: 0.2em;
 }
 
 .btn-retour .fas{
@@ -979,13 +981,6 @@ h3{
   margin-top: 41em;
 }
 
-.pied_de_page_menu{
-  width: 7em;
-  font-size: 0.9em;
-  margin-bottom: 1.5em;
-  filter: invert(1);
-}
-
 .info_footer_lien_menu a{
   font-family: 'roboto regular',arial;
   color: white;
@@ -1059,6 +1054,7 @@ h3{
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
   }
+
   .detail{
     font-size: 0.7em;
   }
@@ -1202,6 +1198,10 @@ h3{
    margin-right: auto;
   }
 
+  .titre-site-footer{
+   text-align: center;
+  }
+
   .info_footer_lien {
     width: 100%;
   }
@@ -1316,16 +1316,13 @@ h3{
 
   .entete_resto{
     width: auto;
-    height: 5em;
+    height: 2em;
+    padding-bottom:2em;
   }
 
-  .logo_resto{ 
-    width: 25%;
-    height: 2.5em;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
+  .titre-site {
+    font-family: "shrikhand";
+    font-size: 3em;
   }
 
   nav{
@@ -1410,6 +1407,10 @@ h3{
     }
   }
   
+  .titre-site-footer{
+    text-align: center;
+   }
+
   .pied_resto{
     height: 4em;
   }
