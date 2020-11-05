@@ -14,7 +14,6 @@ $anim-delay:$anim-dur/$num-circles;
   animation: font-loading 3000ms;
   position: absolute;
   z-index: 2;
-
   opacity: 0;
 }
 
@@ -1389,6 +1388,8 @@ h3{
   .bloc_resto{
     display: flex;
     width: 21%;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .image-cover, .image-cover1, .image-cover2, .image-cover3 {
